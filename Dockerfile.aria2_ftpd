@@ -1,9 +1,9 @@
 FROM gam2036/aria2  
 
-ENV FTP_SRV
-ENV FTP_USR
-ENV FTP_PWD
-ENV FTP_MNT
+ENV FTP_SRV "127.0.0.1"
+ENV FTP_USR "test"
+ENV FTP_PWD "test"
+ENV FTP_MNT "/mnt"
 
 RUN apt-get install curlftpfs
  
