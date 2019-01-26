@@ -7,4 +7,4 @@ ENV FTP_MNT "/mnt"
 
 RUN apt-get -y install curlftpfs
  
-CMD ["mount $FTP_USR:$FTPPWD@$FTPSRV $FTP_MNT ; aria2c --conf-path=/etc/aria2.conf"]
+CMD ["mount ${FTP_USR}:${FTP_PWD}@${FTP_SRV} ${FTP_MNT} ; aria2c --conf-path=/etc/aria2.conf"]
