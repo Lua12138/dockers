@@ -1,0 +1,10 @@
+FROM gam2036/aria2  
+
+ENV FTP_SRV
+ENV FTP_USR
+ENV FTP_PWD
+ENV FTP_MNT
+
+RUN apt-get install curlftpfs
+ 
+CMD ["mount $FTP_USR:$FTPPWD@$FTPSRV $FTP_MNT ; aria2c --conf-path=/etc/aria2.conf"]
