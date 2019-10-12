@@ -8,4 +8,4 @@ RUN apk add --no-cache python2 g++ make zeromq-dev protobuf-dev graphicsmagick y
     apk --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ add android-tools && \
     npm install -g stf --unsafe-perm
 
-CMD ["stf", "local", "--public-ip", "0.0.0.0"]
+CMD ["stf", "local"]
